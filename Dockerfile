@@ -10,6 +10,7 @@ RUN wget "https://mirrors.estointernet.in/apache/kafka/2.8.0/kafka_2.13-2.8.0.tg
  rm -rf kafka_2.13-2.8.0
 
 RUN echo "export KAFKA_HOME=/usr/local/bin/kafka" >> ~/.bash_profile
+RUN echo "export KAFKA_CONFIG=/usr/local/bin/kafka/config" >> ~/.bash_profile
 
 RUN echo "source ~/.bash_profile" >> ~/.bashrc
 
